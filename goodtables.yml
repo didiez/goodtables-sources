@@ -2,7 +2,7 @@ settings:
   checks:
     - structure
     - schema
-    - foreign-key
+    #- foreign-key
   row_limit: 1000
   order_fields: True
   infer_fields: False
