@@ -4,6 +4,5 @@ settings:
     - schema
     - foreign-key
   row_limit: 1000
-  infer_schema: True
-  infer_fields: True
   order_fields: True
+  infer_fields: False
