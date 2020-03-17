@@ -6,13 +6,13 @@
             "schema": {
                 "fields": [
                     {
-                    "name": "id",
-                    "type": "number",
-                    "constraints": {
-                        "required": true,
-                        "unique": true
-                    }
-                },
+                        "name": "id",
+                        "type": "number",
+                        "constraints": {
+                            "required": true,
+                            "unique": true
+                        }
+                    },
                     {
                         "name": "name",
                         "type": "string",
@@ -28,7 +28,10 @@
                         "name": "gender",
                         "type": "string",
                         "constraints": {
-                            "enum": ["male", "female"]
+                            "enum": [
+                                "male",
+                                "female"
+                            ]
                         }
                     },
                     {
@@ -75,7 +78,10 @@
                 "foreignKeys": [
                     {
                         "fields": "person_id",
-                        "reference": {"resource": "people", "fields": "id"}
+                        "reference": {
+                            "resource": "people",
+                            "fields": "id"
+                        }
                     }
                 ]
             }
