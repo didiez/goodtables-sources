@@ -1,0 +1,78 @@
+{
+    "resources": [
+        {
+            "name": "people",
+            "path": "people.csv",
+            "schema": {
+                "fields": [
+                    {
+                    "name": "id",
+                    "type": "number",
+                    "constraints": {
+                        "required": true,
+                        "unique": true
+                    }
+                },
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "constraints": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "surname",
+                        "type": "string"
+                    },
+                    {
+                        "name": "gender",
+                        "type": "string",
+                        "constraints": {
+                            "enum": ["male", "female"]
+                        }
+                    },
+                    {
+                        "name": "dob",
+                        "type": "date",
+                        "constraints": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "more",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "prizes",
+            "path": "prizes.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "person_id",
+                        "type": "number",
+                        "constraints": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "prize",
+                        "type": "string",
+                        "constraints": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "year",
+                        "type": "year",
+                        "constraints": {
+                            "required": true
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

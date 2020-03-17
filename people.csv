@@ -1,0 +1,8 @@
+id,name,surname,dob,country
+1,"Stephen","Hawking","1942-01-08","england"
+2,"Marie","Curie","07/11/1867","poland"
+3,"Ada","Lovelace","1815-12-10","england"
+4,None,"Darwin","1809-02-12","england"
+5,"Isaac","Newton","1642-12-25","england"
+5,"Galileo","Galilei","1564-02-15","italy"
+7,"Leonardo","da Vinci","1452-04-15","italy"
