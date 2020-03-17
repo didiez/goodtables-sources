@@ -75,7 +75,7 @@
                 "foreignKeys": [
                     {
                         "fields": "person_id",
-                        "reference": {"resource": "people", "fields": "id"},
+                        "reference": {"resource": "people", "fields": "id"}
                     }
                 ]
             }
